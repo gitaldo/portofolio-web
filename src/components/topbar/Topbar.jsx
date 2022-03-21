@@ -11,7 +11,7 @@ const Topbar = ({ menuOpen, setMenuOpen }) => {
           </a>
           <div className="itemContainer">
             <Person className="icon" />
-            <span>+63 857 9445 8643</span>
+            <span>+62 857 9445 8643</span>
           </div>
           <div className="itemContainer">
             <Mail className="icon" />
