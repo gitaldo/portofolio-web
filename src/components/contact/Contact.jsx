@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./contact.scss";
+import { shake} from "../../assets";
 
 import React from 'react'
 
@@ -13,7 +14,7 @@ const Contact = () => {
   return (
     <div className="contact" id="contact">
       <div className="left">
-        <img src="assets/shake.svg" alt="" />
+        <img src={shake} alt="" />
       </div>
       <div className="right">
         <h2>Contact.</h2>

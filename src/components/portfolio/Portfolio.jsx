@@ -31,10 +31,6 @@ const Portfolio = () => {
       id: "design",
       title: "Design",
     },
-    // {
-    //   id: "content",
-    //   title: "Content",
-    // },
   ];
 
   useEffect(() => {
@@ -51,9 +47,6 @@ const Portfolio = () => {
       case "design":
         setData(designPortfolio);
         break;
-      // case "content":
-      //   setData(contentPortfolio);
-      //   break;
       default:
         setData(featuredPortfolio);
     }

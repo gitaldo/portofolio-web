@@ -1,0 +1,12 @@
+import arrow from './arrow.png'
+import down from './down.png'
+import globe from './globe.png'
+import linkedin from './linkedin.png'
+import man from './man.png'
+import mobile from './mobile.png'
+import right_arrow from './right-arrow.png'
+import twitter from './twitter.png'
+import writing from './writing.png'
+import youtube from './youtube.png'
+import shake from './shake.svg'
+export {arrow,down, globe, linkedin,man, mobile,right_arrow, twitter,writing,youtube,shake};

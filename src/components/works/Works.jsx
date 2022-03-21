@@ -1,13 +1,14 @@
 import { useState } from "react";
 import "./works.scss";
 import React from 'react'
+import { arrow , mobile, writing, globe} from "../../assets";
 
 const Works = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const data = [
     {
       id: "1",
-      icon: "./assets/mobile.png",
+      icon: `${mobile}`,
       title: "Web Design",
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
@@ -16,7 +17,7 @@ const Works = () => {
     },
     {
       id: "2",
-      icon: "./assets/globe.png",
+      icon: `${globe}`,
       title: "Mobile Application",
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -25,7 +26,7 @@ const Works = () => {
     },
     {
       id: "3",
-      icon: "./assets/writing.png",
+      icon: `${writing}`,
       title: "Branding",
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -70,13 +71,13 @@ const Works = () => {
         ))}
       </div>
       <img
-        src="assets/arrow.png"
+        src={arrow}
         className="arrow left"
         alt=""
         onClick={() => handleClick("left")}
       />
       <img
-        src="assets/arrow.png"
+        src={arrow}
         className="arrow right"
         alt=""
         onClick={() => handleClick()}
