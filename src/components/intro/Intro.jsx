@@ -2,6 +2,7 @@ import "./intro.scss";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
 import { down, man } from "../../assets";
+import PdfResume from "../../assets/Resume.pdf";
 
 const Intro = () => {
   const textRef = useRef();
@@ -17,23 +18,22 @@ const Intro = () => {
 
   return (
     <div className="intro" id="intro">
-      <div className="left">
-        <div className="imgContainer">
-          <img src={man} alt="" />
-        </div>
+      <div className="intro-name">
+        <h2>Hi There, I'm</h2>
+        <h1>Aldo Apdilla Faurian</h1>
+        <h3>
+          Full-Stack Developer <span ref={textRef}></span>
+        </h3>
       </div>
-      <div className="right">
-        <div className="wrapper">
-          <h2>Hi There, I'm</h2>
-          <h1>Aldo Apdilla Faurian</h1>
-          <h3>
-            Full-Stack Developer <span ref={textRef}></span>
-          </h3>
-        </div>
-        <a href="#portfolio">
-          <img src={down} alt="" />
+      <div className="intro-button">
+        <h3>Get My Resume</h3>
+        <a href={PdfResume} download>
+          <button> Download</button>
         </a>
       </div>
+      <a className="a-portoflio" href="#portfolio">
+        <img src={down} alt="" />
+      </a>
     </div>
   );
 };
