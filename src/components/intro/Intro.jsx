@@ -1,7 +1,7 @@
 import "./intro.scss";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
-import { down, man } from "../../assets";
+import { down } from "../../assets";
 import PdfResume from "../../assets/Resume.pdf";
 
 const Intro = () => {
