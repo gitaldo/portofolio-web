@@ -39,6 +39,11 @@
         width: 300px;
         height: 30px;
         font-size: 14px;
+        border-radius: 5px;
+        outline: none;
+        border: solid 1px rgb(200, 200, 200);
+        padding: 5px 10px;
+        
 
         @include mobile {
           width: 200px;
@@ -51,6 +56,10 @@
         height: 200px;
         font-size: 14px;
         resize: none;
+        border-radius: 5px;
+        outline: none;
+        padding: 5px 10px;
+        border: solid 1px rgb(200, 200, 200);
         @include mobile {
           width: 200px;
           height: 100px;

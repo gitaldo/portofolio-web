@@ -62,12 +62,13 @@ const Portfolio = () => {
             active={selected === item.id}
             setSelected={setSelected}
             id={item.id}
+            key={item.id}
           />
         ))}
       </ul>
       <div className="container">
         {data.map((d) => (
-          <div className="item">
+          <div className="item"  key={d.title}>
             <img src={d.img} alt="" />
             <h3>{d.title}</h3>
           </div>

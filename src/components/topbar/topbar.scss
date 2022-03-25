@@ -26,15 +26,25 @@
         text-decoration: none;
         color: inherit;
         margin-right: 40px;
+        @include mobile{
+          margin-right: 20px;
+        }
       }
 
       .itemContainer {
         display: flex;
         align-items: center;
         margin-left: 30px;
-
-        @include mobile{
-          display: none;
+        @include mobile {
+          margin-left: 10px;
+          cursor: pointer;
+          span {
+            display: none;
+          }
+          .icon {
+            font-size: 18px;
+            color: inherit;
+          }
         }
 
         .icon {
@@ -45,6 +55,39 @@
         span {
           font-size: 15px;
           font-weight: 500;
+        }
+      }
+      .itemContainer-linkind {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        cursor: pointer;
+
+        @include mobile {
+          margin-left: 10px;
+          span {
+            display: none;
+          }
+          .icon {
+            font-size: 18px;
+            color: inherit;
+          }
+        }
+        a {
+          text-decoration: none;
+          display: flex;
+          color: inherit;
+          .icon {
+            font-size: 18px;
+            margin-right: 5px;
+            color: inherit;
+          }
+
+          span {
+            font-size: 15px;
+            font-weight: 500;
+            
+          }
         }
       }
     }
